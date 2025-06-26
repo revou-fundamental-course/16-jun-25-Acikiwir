@@ -29,14 +29,14 @@
       <div class="hitung-luas">
         <form action="">
           <h2>LUAS SEGITIGA</h2>
-          <label for="">Luas (a):</label>
-          <input type="number">
+          <label for="">Alas (a):</label>
+          <input type="number" id="alas" name="alas">
 
           <label for="">Tinggi (t):</label>
-          <input type="number">
+          <input type="number" id="tinggi" name="tinggi">
 
-          <button type="button">Hitung</button>
-          <button type="reset">Reset</button>
+          <button type="button" onclick="hitungLuas()">Hitung</button>
+          <button type="reset" onclick="resetLuas()">Reset</button>
 
           <p>Hasil Luas: <span id="hasil-luas">-</span></p>
         </form>
@@ -45,22 +45,23 @@
       <div class="hitung-keliling">
         <h2>KELILING SEGITIGA</h2>
         <label for="">Sisi A:</label>
-        <input type="number">
+        <input type="number" id="sisi1" name="sisi1">
 
         <label for="">Sisi B:</label>
-        <input type="number">
+        <input type="number" id="sisi2" name="sisi2">
 
         <label for="">Sisi C:</label>
-        <input type="number">
+        <input type="number" id="sisi3" name="sisi3">
 
-        <button type="button">Hitung</button>
-        <button type="reset">Reset</button>
+        <button type="button" onclick="hitungKeliling()">Hitung</button>
+        <button type="reset" onclick="resetKeliling()">Reset</button>
 
-        <p>Hasil Luas: <span id="hasil-luas">-</span></p>
+        <p>Hasil Keliling: <span id="hasil-keliling">-</span></p>
       </div>
     </section>
     <footer id="footer">
       <p>credit</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
