@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Kalkulator Matematik</title>
 </head>
 <body>
-    
+    <header id="header">
+        <h1>Kalkulator Matematik</h1>
+    </header>
+
+    <section id="landing">
+      <div>
+        <h1>WELCOME TO KATIK</h1>
+        <p>Hai Sobat, Selamat datang di Katik :)</p>
+        <p>Sebuah web APP sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+        <div>
+            <a class="btn" href="">Mulai Hitung</a>
+        </div>
+        <div>
+          <img src="asset/Segitiga.jpg" alt="landing img">
+        </div>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="hitung-luas">
+        <form action="">
+          <h2>LUAS SEGITIGA</h2>
+          <label for="">Luas (a):</label>
+          <input type="number">
+
+          <label for="">Tinggi (t):</label>
+          <input type="number">
+
+          <button type="button">Hitung</button>
+          <button type="reset">Reset</button>
+
+          <p>Hasil Luas: <span id="hasil-luas">-</span></p>
+        </form>
+      </div>
+
+      <div class="hitung-keliling">
+        <h2>KELILING SEGITIGA</h2>
+        <label for="">Sisi A:</label>
+        <input type="number">
+
+        <label for="">Sisi B:</label>
+        <input type="number">
+
+        <label for="">Sisi C:</label>
+        <input type="number">
+
+        <button type="button">Hitung</button>
+        <button type="reset">Reset</button>
+
+        <p>Hasil Luas: <span id="hasil-luas">-</span></p>
+      </div>
+    </section>
+    <footer id="footer">
+      <p>credit</p>
+    </footer>
 </body>
 </html>
